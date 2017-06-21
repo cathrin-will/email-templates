@@ -6,25 +6,51 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<title></title>
 		<style type="text/css">
+
 			* { -webkit-text-size-adjust:none; }
 
-			body { width:100% !important; height:100% !important; padding:0 !important; margin:0 !important; }
-			/* Resolves the Outlook 2007, 2010, and Gmail td padding issue, and removes spacing around tables that Outlook adds. */
+			body {
+				width: 100% !important;
+				height: 100% !important;
+				padding: 0 !important;
+				margin: 0 !important;
+			}
 
+			/* Resolves the Outlook 2007, 2010, and Gmail td padding issue, and removes spacing around tables that Outlook adds. */
 			table { border-spacing:0; }
-			table, td { border-collapse: collapse;mso-table-lspace:0pt; mso-table-rspace:0pt; }
+
+			table,
+			td {
+				border-collapse: collapse;
+				mso-table-lspace: 0pt;
+				mso-table-rspace: 0pt;
+			}
+
 			a { text-decoration: none; }
 			a { transition: .25s; }
 			a:hover { text-decoration: underline!important; }
 
 			/* Corrects the way Internet Explorer renders resized images in emails. */
-			img { max-width: 100% !important; border: 0; height: auto!important;-ms-interpolation-mode: bicubic; }
+			img {
+				max-width: 100% !important;
+				border: 0;
+				height: auto!important;
+				-ms-interpolation-mode: bicubic;
+			}
 
 			/* Ensures images don't have borders or text-decorations applied to them by default. */
-			img, a img { border:0; outline:none; text-decoration:none; }
+			img,
+			a img {
+				border: 0;
+				outline: none;
+				text-decoration: none;
+			}
 
 			/* Ensures Webkit- and Windows-based clients don't automatically resize the email text. */
-			body, table, td, a,{
+			body,
+			table,
+			td,
+			a,{
 				-ms-text-size-adjust:100%;
 				-webkit-text-size-adjust:100%;
 			}
@@ -35,9 +61,9 @@
 			}
 
 			@media screen and (max-device-width: 465px), screen and (max-width: 465px) {
-				table[class="container"] {width: 100% !important; }
-				table[class="wrapper"] .mobile-block { display: block !important;width: auto !important; }
-				table[class="wrapper"] .mobile-hide { display:none !important; }
+				table[class="container"] { width: 100% !important; }
+				table[class="wrapper"] .mobile-block { display: block !important; width: auto !important; }
+				table[class="wrapper"] .mobile-hide { display: none !important; }
 				table[class="container"] .mobile-width { width: 10px !important; }
 				table[class="container"] .mobile-center { text-align: center!important; }
 			}
